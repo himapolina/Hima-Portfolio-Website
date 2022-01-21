@@ -28,35 +28,6 @@ footer{
     
 
 }
-/*
-#photu{
-    position: absolute;
-    height: 320px;
-    
-    filter: drop-shadow(5.25px 11.25px 26.25px rgba(0, 0, 0, 0.75));
-    border-radius: 26.25px;
-}
-.hero-content h1{
-    position: absolute;
-    font-weight: 800;
-    font-size: 60px;
-    left: 162px;
-    top: 250px;
-    color: #f0f0f0;
-    margin: 0;
-}
-
-.hero-content p{
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 58px;
-    width: 944px;
-    height: 123px;
-    left: 162px;
-    top: 863px;
-    color: #9FC6FF;
-    margin: 0;
-} */
 
 nav {
     display: flex;
