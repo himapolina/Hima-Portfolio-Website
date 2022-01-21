@@ -250,3 +250,18 @@ header .hero-image .photo-bg:hover{
 img{
     width: 100%;
 }
+/* scrollbar style*/
+/* width */
+::-webkit-scrollbar {
+    width: 0.8vw;
+  }
+  /* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0.5vw grey; 
+    border-radius: 3%;
+}
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #0d3168; 
+    border-radius: 10%;
+}

@@ -17,5 +17,8 @@ $('#cool').mousemove(function(event) {
     mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
     mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
     
-    $('body').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, #33363b, #232323)');
-  });
+    $('body').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, #333333, #1a1a1a)');
+});
+$(document).ready(function(){
+    $('body').load('dbcreation.php');
+})

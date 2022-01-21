@@ -1,4 +1,4 @@
-<?php
+<?php 
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -10,23 +10,16 @@ $conn = new mysqli($servername, $username, $password);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+
 //creating DB
-$sql = "USE MYWEBSITE";
+$sql = "CREATE DATABASE MYWEBSITE";
 if($conn->query($sql)!=TRUE){
     echo "Error connecting to database: ", $conn->error;
 }
-$name = $_REQUEST['sender'];
-$email = $_REQUEST['email'];
-$msg = $_REQUEST['msg'];
-$sql = "insert into MYMESSAGES values('$name', '$email', '$msg')";
+$sql = "CREATE TABLE MYMESSAGES( senderName varchar(32) not null, email varchar(100) not null, 
+        mymsg varchar(500) not null, sentTime timestamp default CURRENT_TIMESTAMP)";
 if($conn->query($sql)!=TRUE){
-    echo "Error in sending message: ", $conn->error;
-}else{
-    ?>
-    <script type="text/javascript">alert("Message sent! Thank you :)");</script>
-    <?php
-    header('Location: index.html');
-    exit;
+    echo "Error in connecting to table: ", $conn->error;
 }
 $conn->close();
 ?>

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css">
     
 </head>
-<body>
+<body id="cool">
 <script src="main.js"></script>
     <div class="nav-container">
         <div class="wrapper">
@@ -106,16 +106,16 @@
                 <center>
                     <h1 class="typewriter">Leave a Message</h1><br>
                 </center>
-            <form id="msg-form" onsubmit="msg.php"> <center>
+            <form id="msg-form" method="post" action="msg.php"> <center>
             <div class="field">
             <label for ="name" >Name<span style="color:red;">*</span></label>
-            <input type="text" id="name" required placeholder="Name"></div>
+            <input type="text" id="name" required placeholder="Name" name="sender"></div>
             <div class="field">
             <label for ="email">Email Id<span style="color:red;">*</span></label>
-            <input type="email" id="email" required placeholder="Email Id"></div>
+            <input type="email" id="email" required placeholder="Email Id" name="email"></div>
             <div class="field">
             <label for ="msg">Message<span style="color:red;">*</span></label>
-            <textarea id="msg" required placeholder="Message"></textarea></div><br><br><br>
+            <textarea id="msg" required placeholder="Message" name="msg"></textarea></div><br><br><br>
             <button type="Submit" id="send-btn">Send Message</button>
             </center>
             
