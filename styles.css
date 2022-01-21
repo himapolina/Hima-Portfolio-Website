@@ -1,0 +1,262 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+    
+}
+body{
+    font-family: "Visby CF", sans-serif;
+    background-color: #232323;
+    overflow: hidden;
+    overflow-y: auto;
+}
+footer{
+    visibility: hidden;
+}
+/* Navigation */
+.nav-container{
+    background-color: #3264AF;
+    box-shadow: 0px 8px 24px rgba(0,0,0,0.75);
+    height: 72px;
+    color: #f0f0f0;
+    position: relative;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+
+}
+/*
+#photu{
+    position: absolute;
+    height: 320px;
+    
+    filter: drop-shadow(5.25px 11.25px 26.25px rgba(0, 0, 0, 0.75));
+    border-radius: 26.25px;
+}
+.hero-content h1{
+    position: absolute;
+    font-weight: 800;
+    font-size: 60px;
+    left: 162px;
+    top: 250px;
+    color: #f0f0f0;
+    margin: 0;
+}
+
+.hero-content p{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 58px;
+    width: 944px;
+    height: 123px;
+    left: 162px;
+    top: 863px;
+    color: #9FC6FF;
+    margin: 0;
+} */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav ul{
+    display: flex;
+}
+
+nav .logo {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 56px;
+    color: #9FC6FF;
+}
+.nav-items li {
+    list-style: none;
+    margin-right: 100px;
+}
+
+.nav-items li a {
+    color: #f0f0f0;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* header stuff */
+.header-container{
+    background-position-x: right;
+    background-size: contain;
+    display:inline-flexbox;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+content{
+    display: flex;
+    align-items: left;
+    justify-content: space-evenly;
+}
+
+.hero-content p{
+    font-size: 24px;
+    line-height: 42px;
+    color:#9FC6FF;
+    width: 418px;
+    margin-bottom: 48px;
+}
+
+.hero-content h1, .hero-content2 h1{
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 75px;
+    color: #f0f0f0;
+    margin-bottom: 24px;
+    width: fit-content;
+}
+.hero-content2 p, label{
+    font-size: 24px;
+    line-height: 42px;
+    color:#9FC6FF;
+    width: 700px;
+    text-align: justify;
+    margin-bottom: 48px;
+    vertical-align: middle;
+}
+.hero-content2 li{
+    list-style: none;
+    font-size: 28px;
+    color: #f0f0f0;
+    line-height: normal;
+}
+
+header a{
+    color: #f0f0f0;
+    font-size: 20px;
+    text-decoration: None;
+    background: #3264AF;
+    border-radius: 8px;
+    padding: 12px 48px;
+    display: inline-block;
+    transition: 300ms;
+}
+
+header a:hover {
+    transform: translateY(-8px);
+}
+header .hero-image {
+    position: relative;
+}
+header .hero-image img {
+    transition: 300ms;
+    position: relative;
+    top: 30px;
+    width: 429px;
+    z-index: 100;
+
+}
+
+header .hero-image img:hover {
+    transform: rotate(-6deg);
+}
+header .hero-image .photo-bg {
+    position:absolute;
+    right: 15px;
+    width: 410px;
+    height: 423px; 
+    background: #3264AF;
+    border-radius: 35px;
+    top: 30px;
+}
+/*
+header .hero-image .photo-bg:hover{
+    transform: rotate(6deg);
+} */
+
+/* typewriter animation */
+.typewriter{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #3264AF; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+  /* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #3264AF; }
+}
+
+/* animation end */
+.white{
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+.edu {
+    width: 30%;
+    padding: 30px;
+    float: left;
+}
+.edu h3{
+    font-size: 28px;
+}
+.edu p{
+    font-size: 18px;
+}
+.edu img{
+    width: 135px;
+    height: fit-content;
+}
+.row:after{
+    display: table;
+
+}
+
+.field{
+    display:flex;
+    align-items: center;
+}
+.field label, input, textarea{
+    width: 20%;
+    height: auto;
+    float: left;
+    padding: 10px;
+    margin:auto;
+    position: relative;
+
+}
+#send-btn{
+    color: #f0f0f0;
+    font-size: 20px;
+    font-family: "Visby CF", sans-serif;
+    background: #3264AF;
+    border-radius: 8px;
+    padding: 12px 48px;
+    display: inline-block;
+    transition: 300ms;
+}
+::placeholder{
+    font-family: "Roboto", sans-serif;
+    opacity: 55%;
+    color:#3264AF ;
+}
+img{
+    width: 100%;
+}
