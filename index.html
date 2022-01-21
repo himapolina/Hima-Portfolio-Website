@@ -22,10 +22,10 @@
                         <a href="#">Home</a>
                     </li>
                     <li>
-                        <a href="intro.html">Intro</a>
+                        <a href="#intro">Intro</a>
                     </li>
                     <li>
-                        <a href="education.html">Education</a>
+                        <a href="#edu">Education</a>
                     </li>
                     <li>
                         <a href="#">Skills</a>
@@ -34,26 +34,98 @@
                         <a href="#">Experience</a>
                     </li>
                     <li>
-                        <a href="message.html">Contact Me</a>
+                        <a href="#message">Contact Me</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </div>
-    <div class="header-container">
+    <div class="header-container"><br><br><br><br>
         <div class="wrapper">
             <header>
-                <div class="hero-content ">
+                <div class="hero-content "><br><br>
                     <h1 class="typewriter">Hi, this is Hima.</h1>
                     <p>Welcome to my website. I'm glad you're visiting, if you like it please leave a message :)</p>
-                    <a href="message.html">Leave a Message</a>
+                    <a href="#message">Leave a Message</a>
                 </div>
                 <div class="hero-image">
-                    <img src="D:\Downloads\color split 1.png" alt="" id="photu">
+                    <img src="hima-bitmoji-sqr.jpg" id="photu">
                     <div class="photo-bg" id="photu-bg"></div>
 
                 </div>
             </header>
+
+            <br><br><br><br><br><br><br>
+            <div class="hero-content2" id="intro">
+                <center ><br><br><br><br>
+                    <h1 class="typewriter" >Introduction</h1>
+                </center>
+                <header>
+                <p> I am a <span class="white">CSE</span> Undergrad studying in VIT, Vellore.
+                    I'm from Andhra Pradesh India. Telugu is my native language. However, I am fluent in English as well as Hindi. I know a li'l bit of German and Greek!<br>
+                    I'm currently exploring my tech niche and learning new things. <span class="white">Python</span> is my favorite programming language.<br>
+                    I enjoy being creative. I like solving <span class = "white">puzzles</span> and applying logic to everything!
+                    I draw, I paint, I code, I dance and I browse.
+                    Watching <span class="white">Netflix</span> is my fav hobby. Got any recommendations? Leave a message :P
+                    
+                </p>
+                
+            </header>
+                
+            </div>
+
+            <header>
+                <div class="hero-content2">
+                    <center id="edu"><br><br><br><br>
+                        <h1 class="typewriter">Education</h1>
+                    </center>
+                    <ul class="row">
+                        <li class="edu">
+                            <img src="vit-logo.jpg" style="border-radius: 20px;">
+                            <h3>Vellore Institute of Technology, Vellore</h3>
+                            <p>B. Tech in CSE, 2019-2023<br>CGPA: 8.93</p>
+                            
+                        </li>
+                        <li class="edu">
+                            <img src="hvs-logo.png">
+                            <h3>Happy Valley School, Agiripalli</h3>
+                            <p>12th Grade CBSE, 2019<BR>Percentage: 94.8</p>
+                        </li>
+                        <li class="edu">
+                            <img src="ism-logo.png" style="border-radius: 20px;">
+                            <h3>Indian School Muscat, Oman</h3>
+                            <p>10th Grade CBSE, 2017<BR>CGPA: 10</p>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </header>
+
+            <br><br><br>
+            <div class="hero-content2" id="message">
+                <center>
+                    <h1 class="typewriter">Leave a Message</h1><br>
+                </center>
+            <form id="msg-form" onsubmit="msg.php"> <center>
+            <div class="field">
+            <label for ="name" >Name<span style="color:red;">*</span></label>
+            <input type="text" id="name" required placeholder="Name"></div>
+            <div class="field">
+            <label for ="email">Email Id<span style="color:red;">*</span></label>
+            <input type="email" id="email" required placeholder="Email Id"></div>
+            <div class="field">
+            <label for ="msg">Message<span style="color:red;">*</span></label>
+            <textarea id="msg" required placeholder="Message"></textarea></div><br><br><br>
+            <button type="Submit" id="send-btn">Send Message</button>
+            </center>
+            
+            </form>
+            <style>
+                .field label{
+                    float: right;
+                }
+            </style>
+            </div>
         </div>
     </div>
 
