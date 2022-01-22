@@ -19,6 +19,7 @@ $('#cool').mousemove(function(event) {
     
     $('body').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, #333333, #1a1a1a)');
 });
+/*
 $(document).ready(function(){
     $('body').load('dbcreation.php');
-})
+})*/

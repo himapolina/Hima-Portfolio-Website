@@ -265,3 +265,12 @@ img{
     background: #0d3168; 
     border-radius: 10%;
 }
+
+.footer-container{
+    background-color: #3264AF;
+    box-shadow: 0px -8px 10px rgba(0,0,0,0.75);
+    height: 65px;
+    color: #f0f0f0;
+    position: relative;
+    width: 100%;
+}
